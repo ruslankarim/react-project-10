@@ -60,8 +60,6 @@ export default function Shop() {
 
   return (
       <div className="flex h-full">
-        {/* Sidebar starts */}
-        {/* Remove class [ hidden ] and replace [ sm:flex ] with [ flex ] */}
         <div className="w-70 flex-col justify-between py-10 px-6 border-r-2 shadow fixed left-0 top-0 bottom-0">
           <AddItem
               name={name}
@@ -72,10 +70,7 @@ export default function Shop() {
               onFormSubmit={handleFormSubmit}
           />
         </div>
-        {/* Sidebar ends */}
-        {/* Remove class [ h-64 ] when adding a card block */}
         <div className="container mx-auto py-10 h-64 md:w-4/5 w-11/12 pl-60">
-          {/* Remove class [ border-dashed border-2 border-gray-300 ] to remove dotted border */}
           <ItemsList items={items} onDeleteClick={handleDeleteClick} />
         </div>
       </div>
